@@ -389,12 +389,99 @@ const cursos=["HTML","CSS","JAVASCRIPT","REACT"]
 // })
 
 
-let c=cursos.map((el,i)=>{
-    return el
-    console.log("Curso:" + el + " - Posição do curso:" + i)
+// let c=cursos.map((el,i)=>{
+//     return el
+//     console.log("Curso:" + el + " - Posição do curso:" + i)
+// })
+// console.log(c)
+
+const converterInt=(e)=>parseInt(e)
+const dobrar=(e)=>e*2
+let num_1=['1','2','3','4','5'].map(dobrar)
+
+console.log(num_1)
+
+
+
+//OPERADOR THIS
+
+console.log("\ ")
+console.log("OPERADOR THIS")
+
+// function aluno(nome,nota){
+//     this.nome = nome
+//     this.nota = nota
+
+//     this.dados_anonimo=function(){
+//         setTimeout(function(){
+//             console.log(this.nome)
+//             console.log(this.nota)
+//         },0)
+//     }
+//     this.dados_arrow=function(){
+//         setTimeout(()=>{
+//             console.log(this.nome)
+//             console.log(this.nota)
+//         },0)
+//     }
+// }
+// const al1 = new aluno("Victor",100)
+// al1.dados_anonimo()
+// al1.dados_arrow()
+
+//METODO FILTER
+
+console.log("\ ")
+console.log("METODO FILTER")
+
+const filtroMaior18=(valor)=>{
+    if(valor >= 18){
+       return valor
+    }
+}
+const idades= [15,10,23,24,12,32]
+const maior=idades.filter((val,ind,arr)=>{
+    if(val >= 18){
+        return val
+     }
 })
-console.log(c)
+const menor=idades.filter((val,ind,arr)=>{
+    if(val <= 18){
+        return val
+     }
+})
 
-const converterInt=(e) => parseInt()
+// const filtroMaior18=(valor,indice,array)=>{
 
+console.log(filtroMaior18)
+
+console.log(idades)
+console.log(maior)
+console.log(menor)
+
+
+//ITERADORES
+console.log("\ ")
+console.log("ITERADORES")
+
+const valores_i=[10,8,9,2]
+const it_valores=valores_i[Symbol.iterator]()
+
+const texto="Youtube"
+const it_texto=texto[Symbol.iterator]()
+
+console.log(texto)
+console.log(it_texto.next())
+console.log(it_texto.next())
+console.log(it_texto.next())
+console.log(it_texto.next())
+console.log(it_texto.next())
+console.log(it_texto.next())
+console.log(it_texto.next())
+console.log(it_texto.next())
+console.log(it_valores.next().value)
+console.log(it_valores.next().value)
+console.log(it_valores.next().value)
+console.log(it_valores.next().value)
+console.log(it_valores.next().value)
 
