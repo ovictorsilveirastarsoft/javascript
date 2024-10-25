@@ -485,3 +485,45 @@ console.log(it_valores.next().value)
 console.log(it_valores.next().value)
 console.log(it_valores.next().value)
 
+
+https://docs.nestjs.com
+
+https://www.youtube.com/playlist?list=PLhqYZdo-g9iR9AcfOxiU_6TQE2M5lY1ZT
+
+
+https://downloadcursos.top/imersao-full-cycle-3/   <<<<<<<< canal do youtube https://www.youtube.com/@FullCycle/playlists
+
+discord ovictorsilveira6615
+
+
+magnet:?xt=urn:btih:69038e5ab5c38c007448f4282ba0f1f9caa35aa5&dn=Fullcicle - Imersão fullcicle 3&tr=udp://tracker.opentrackr.org:1337/announce
+
+
+https://github.com/star-soft/starsoft-backend-challenge
+
+https://www.youtube.com/watch?v=unFL4YX8TRc&list=PL5aY_NrL1rjs_SyPsHf2UGNUkJaB1Qpvo
+
+curso imersão full cycle >>>> o mundo full cycle estudo de casos parei em 44:32
+
+
+https://www.youtube.com/playlist?list=PLSHNk_yA5fNgU8suEO97pQlVFvtvHpWNG curso e logica de programação em javascript
+https://www.youtube.com/playlist?list=PLGVWRac7__cltqD_Wy4rpH65ho9G1XPcp
+
+https://www.youtube.com/playlist?list=PLhqYZdo-g9iR9AcfOxiU_6TQE2M5lY1ZT curso de NestJS
+
+https://www.youtube.com/watch?v=np_vyd7QlXk aprenda docker em 1h
+
+
+Curso de javascript completo https://www.youtube.com/watch?v=E4DBTqgxHGM&list=PLx4x_zx8csUg_AxxbVWHEyAJ6cBdsYc0T PAREI NA AULA 53
+
+Curso de typescript complet https://www.youtube.com/watch?v=vcpLrIzIKjI&list=PLx4x_zx8csUhtPMrkiGvFJVE5LX8Qat5s
+
+https://replit.com/@vanhanguera/nodejsteste#index.js
+
+https://www.udacity.com/course/intro-to-artificial-intelligence--cs271
+
+038585326300
+
+exercicios de codigo >>> https://leetcode.com/
+
+
