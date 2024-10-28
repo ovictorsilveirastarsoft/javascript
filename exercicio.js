@@ -197,7 +197,7 @@ let n7=0
 
 let n8=0
 let pares=0
-let max = 1000
+let max = 10
 
 for (let i=n8;i<max;i++){
     console.log("Valor de N8: " +n8)
@@ -486,44 +486,286 @@ console.log(it_valores.next().value)
 console.log(it_valores.next().value)
 
 
-https://docs.nestjs.com
 
-https://www.youtube.com/playlist?list=PLhqYZdo-g9iR9AcfOxiU_6TQE2M5lY1ZT
+// ARRAYS
+
+console.log("\ ")
+console.log("ARRAYS")
+let coresArray = ["Red", "Green", "Blue", "Yellow"];
+  
+
+let cursosArray = ["HTML","CSS","Javascript", coresArray]
+console.log(cursosArray[3])
+
+// cursosArray.push("C++")
+// cursosArray.push("Python")
+// cursosArray.push("Angular")
+// cursosArray.push("NestJS")
+// cursosArray.pop() //remover o ultimo item do array
+// cursosArray.unshift("NestJS") //adicionar ao topo do array
+// cursosArray.shift()//remove do inicio do array
+
+console.log(cursosArray)
+
+cursosArray.map((element) => {
+    console.log(element);
+})
+
+// ARRAYS COM FUNCTIONS
+
+console.log("\ ")
+console.log("ARRAYS COM FUNCTIONS")
+
+let valoresArray=[0,1,2,3,4,5,6,7,8,9]
+
+const op = [
+    (val)=>{
+        let res = 0 
+        for(v of val){
+            res+=v
+        }
+        return res
+    },
+    (val)=>{
+        let res = 1
+        for(v of val){
+            res*=v
+        }
+        return res
+    },
+    (val)=>{
+        for(v of val){
+            console.log(v)
+        }
+    }
+]
+
+console.log(op[0](valoresArray))
+console.log(op[1](valoresArray))
+op[2](valoresArray)
+
+//COLECAO MAP
 
 
-https://downloadcursos.top/imersao-full-cycle-3/   <<<<<<<< canal do youtube https://www.youtube.com/@FullCycle/playlists
+console.log("\ ")
+console.log("COLECAO MAP")
 
-discord ovictorsilveira6615
+let mapa = new Map()
+mapa.set("curso","Javascript")
+mapa.set("10","123")
+mapa.set("1","100")
+mapa.set("canal","100")
 
+console.log(mapa)
+console.log(mapa.get("1"))
+if(mapa.has("canal")){
+    console.log("esta na coloção")
+}else{
+    console.log("Não esta na coleção")
+}
 
-magnet:?xt=urn:btih:69038e5ab5c38c007448f4282ba0f1f9caa35aa5&dn=Fullcicle - Imersão fullcicle 3&tr=udp://tracker.opentrackr.org:1337/announce
+mapa.forEach((el)=>{
+    console.log(el)
+})
 
-
-https://github.com/star-soft/starsoft-backend-challenge
-
-https://www.youtube.com/watch?v=unFL4YX8TRc&list=PL5aY_NrL1rjs_SyPsHf2UGNUkJaB1Qpvo
-
-curso imersão full cycle >>>> o mundo full cycle estudo de casos parei em 44:32
-
-
-https://www.youtube.com/playlist?list=PLSHNk_yA5fNgU8suEO97pQlVFvtvHpWNG curso e logica de programação em javascript
-https://www.youtube.com/playlist?list=PLGVWRac7__cltqD_Wy4rpH65ho9G1XPcp
-
-https://www.youtube.com/playlist?list=PLhqYZdo-g9iR9AcfOxiU_6TQE2M5lY1ZT curso de NestJS
-
-https://www.youtube.com/watch?v=np_vyd7QlXk aprenda docker em 1h
-
-
-Curso de javascript completo https://www.youtube.com/watch?v=E4DBTqgxHGM&list=PLx4x_zx8csUg_AxxbVWHEyAJ6cBdsYc0T PAREI NA AULA 53
-
-Curso de typescript complet https://www.youtube.com/watch?v=vcpLrIzIKjI&list=PLx4x_zx8csUhtPMrkiGvFJVE5LX8Qat5s
-
-https://replit.com/@vanhanguera/nodejsteste#index.js
-
-https://www.udacity.com/course/intro-to-artificial-intelligence--cs271
-
-038585326300
-
-exercicios de codigo >>> https://leetcode.com/
+//COLECAO SET
 
 
+console.log("\ ")
+console.log("COLECAO SET")
+
+let musicas = new Set(["musica1","musica boa", "musica 10"])
+musicas.add("musica muito legal")
+musicas.add("musica1")
+musicas.add("musica2")
+musicas.add("musica3")
+
+console.log(musicas)
+
+musicas.forEach((el)=>{
+    console.log(el + "\ ")
+}
+)
+
+//COLECAO OBJETOS
+
+
+console.log("\ ")
+console.log("COLECAO OBJETOS")
+
+// class Pessoa{
+//     constructor(pnome){
+//         this.nome=pnome
+//     }
+// }
+
+// let p1 = new Pessoa("Victor")
+// let p2 = new Pessoa("Bruno")
+// let p3 = new Pessoa("Asder")
+// let p4= new Pessoa()
+
+// console.log(p1.nome)
+// console.log(p2.nome)
+// console.log(p3.nome)
+
+class Carro{
+    constructor(pnome,ptipo){
+        this.nome=pnome
+        if(ptipo==1){
+            this.tipo="Esportivo"
+            this.velmax=300
+        }else if(ptipo==2){
+            this.tipo = "Utilitario"
+            this.velmax=100
+        }else if(ptipo==3){
+            this.tipo = "Passeio"
+            this.velmax=160
+        }else{
+            this.tipo="Militar"
+            this.velmax=180
+        }
+    }
+    getAll(){
+        return [this.nome,this.tipo,this.velmax]
+    }
+    getNome(){
+        return this.nome
+    }
+    info(){
+        console.log("Nome: " + this.nome)
+        console.log("Tipo: " + this.tipo)
+        console.log("V.Max: " + this.velmax)
+    }
+}
+
+let c1 = new Carro("Rapidao",1)
+let c2 = new Carro("Super Luxo",2)
+let c3 = new Carro("Bombadao",4)
+let c4 = new Carro("Carrego tudo",3)
+
+console.log(c1.info())
+console.log("--------------")
+console.log(c2.info())
+console.log("--------------")
+console.log(c3.info())
+console.log("--------------")
+console.log(c4.info())
+console.log("--------------")
+
+
+console.log(c1.getNome())
+
+console.log(c1.getAll())
+
+//COLECAO OBJETOS
+
+
+console.log("\ ")
+console.log("COLECAO OBJETOS")
+
+    const readline = require('readline');
+
+    class Pessoa {
+        constructor(pnome, pidade) {
+            this.nome = pnome;
+            this.idade = pidade;
+        }
+    
+        getNome() {
+            return this.nome;
+        }
+        getIdade() {
+            return this.idade;
+        }
+        setNome(novoNome) {
+            this.nome = novoNome;
+        }
+        setIdade(novaIdade) {
+            this.idade = novaIdade;
+        }
+        info() {
+            console.log("Nome:", this.nome);
+            console.log("Idade:", this.idade);
+            console.log("--------------------");
+        }
+    }
+    
+    // // Configuração do readline para entrada de dados via console
+    // const rl = readline.createInterface({
+    //     input: process.stdin,
+    //     output: process.stdout,
+    // });
+    
+    // // Função para adicionar uma nova pessoa via terminal
+    // function adicionarPessoa() {
+    //     rl.question("Digite o nome: ", (nome) => {
+    //         rl.question("Digite a idade: ", (idade) => {
+    //             const novaPessoa = new Pessoa(nome, parseInt(idade, 10));
+    //             novaPessoa.info(); // Exibe as informações da pessoa criada
+    
+    //             rl.close(); // Fecha o readline após as entradas
+    //         });
+    //     });
+    // }
+    
+    // // Chamada da função para testar
+    // adicionarPessoa();
+    
+
+    
+//COLECAO OBJETOS HERANÇA
+
+
+console.log("\ ")
+console.log("COLECAO OBJETOS HERANÇA")
+
+class Carro1{
+    constructor(nome,portas){
+        this.nome=nome
+        this.portas=portas
+        this.ligado=false
+        this.vel=0
+        this.cor=undefined
+    }
+    ligar=function(){
+        this.ligado=true
+    }
+    desligar=function(){
+        this.ligado=false
+    }
+    setCor=function(cor){
+        this.cor=cor
+    }
+}
+
+class Militar extends Carro1{
+    constructor(nome,portas,blindagem,municao){
+        super(nome,portas)
+        this.blindagem=blindagem
+        this.municao=municao
+        this.cor=("verde")
+    }
+    atirar=function(){
+        if(this.municao>0){
+            this.municao--
+        }
+    }
+}
+
+const cc1 = new Carro1("Normal", 4)
+cc1.ligar()
+cc1.setCor("Preto")
+
+const cc2 = new Militar("Lutador",1,100,50)
+
+console.log("Nome:", cc1.nome)
+console.log("Portas:", cc1.portas)
+console.log("Ligado:", cc1.ligado?"Sim":"Não")
+console.log("Vel:", cc1.vel)
+console.log("Cor:", cc1.cor)
+
+console.log("Nome:", cc2.nome)
+console.log("Portas:", cc2.portas)
+console.log("Ligado:", cc2.ligado?"Sim":"Não")
+console.log("Vel:", cc2.vel)
+console.log("Cor:", cc2.cor)
